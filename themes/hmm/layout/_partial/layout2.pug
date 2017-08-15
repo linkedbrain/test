@@ -1,0 +1,39 @@
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet" href="css/uikit.min.css")
+		link(rel="stylesheet" href="css/styles.css")
+		link(rel="stylesheet" href="css/font-awesome.min.css")
+		script(src="js/jquery.js")
+		script(src="js/uikit.min.js")
+		script(src="js/uikit-icons.min.js")
+	body
+		nav.uk-navbar-container.uk-navbar-transparent(uk-navbar='')
+			.uk-navbar-left
+				a.uk-navbar-item.uk-logo(href="" )
+					img(src="/images/logo.png", style="height:40px")
+				//
+					ul.uk-navbar-nav
+						li.uk-active
+							a(href='#') LOG OUT
+						li.uk-active
+							a(href='#') 메뉴
+			.uk-navbar-right
+				ul.uk-navbar-nav
+					li.uk-active
+						a(href='#') 로그아웃
+		// img(src="/images/startup-list.jpg")
+		.uk-cover-container
+			video(uk-cover, autoplay, loop, muted)
+				source(src="//www.quirksmode.org/html5/videos/big_buck_bunny.mp4?test1", type="video/mp4")
+				source(src="//www.quirksmode.org/html5/videos/big_buck_bunny.ogv?test1", type="video/ogg")
+			h1.uk-heading-primary.uk-text-center.uk-vertical-align-middle 끌어다 놓고 공유하기
+		.uk-section.uk-section-primary
+			.uk-padding
+				div
+					block container
+		.uk-section.uk-section-secondary
+			.uk-padding 다양한 서비스를 준비하고 있습니다.
+		.uk-section.uk-section-media.uk-light.uk-background-cover.footer
+			.uk-padding 준비하고 있습니다.

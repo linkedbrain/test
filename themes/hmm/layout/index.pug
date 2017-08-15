@@ -1,0 +1,22 @@
+include _partial/header.pug
+
+img.uk-align-center(src="/images/startup-list.jpg")
+
+.uk-cover-container(style="height:400")
+	video(uk-cover, autoplay, loop, muted)
+		source(src="/images/632332824.mp4", type="video/mp4")
+	h1.uk-heading-primary.uk-text-center.uk-vertical-align-middle 끌어다 놓고 공유하기
+
+
+each p in site.pages.data
+	.uk-section.uk-section-default.uk-margin-large
+		.uk-container
+			h2
+				i.fa.fa-quote-left.uk-margin-right
+				= p.title
+				i.fa.fa-quote-right.uk-margin-left
+
+			!= p.content
+
+
+include _partial/footer.pug

@@ -1,0 +1,29 @@
+header.pug
+doctype html
+html
+	head
+		meta(charset="UTF-8")
+		link(rel="stylesheet" href="/css/uikit.min.css")
+		link(rel="stylesheet" href="/css/styles.css")
+		link(rel="stylesheet" href="/css/font-awesome.min.css")
+		script(src="/js/jquery.js")
+		script(src="/js/uikit.min.js")
+		script(src="/js/uikit-icons.min.js")
+	body
+		.uk-container.uk-background-default(uk-sticky='')
+			nav.uk-navbar-container.uk-navbar-transparent(uk-navbar='')
+				.uk-navbar-left
+					a.uk-navbar-item.uk-logo(href="/")
+						img(src="/images/logo.png", style="height:40px")
+					//
+						ul.uk-navbar-nav
+							li.uk-active
+								a(href='#') LOG OUT
+							li.uk-active
+								a(href='#') 메뉴
+				.uk-navbar-right
+					ul.uk-navbar-nav
+						li.uk-active
+							a(href='/join') 시작하기
+						li.uk-active
+							a(href='/login') 로그인

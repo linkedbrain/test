@@ -1,0 +1,12 @@
+html {
+	height:100%;
+}
+
+body{
+  font-family: roboto, helvetica, sans-serif;
+  height:100%;
+}
+
+.footer {
+	background-image: url(/images/startup-list.jpg);
+}
